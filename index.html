@@ -67,6 +67,28 @@
             margin-bottom: 12px;
             display: block;
         }
+        nav {
+        background-color: #2f3e4e;
+        padding: 1rem 2rem;
+        }
+        nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+        nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        }
+        nav a:hover {
+        text-decoration: underline;
+        }
+
+
     </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
@@ -80,6 +102,14 @@
         <h1>智慧輔助館員</h1>
         <p>「智慧館員輔助系統」以館員實務需求為核心，融合 AI 技術與資料管理設計，協助各部門更有效率地進行知識獲取與決策支援，打造智慧圖書館的工作新模式。</p>
     </header>
+    <div id="navbar"></div>
+    <script>
+    fetch('navbar.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
     <div class="container">
         <div class="about">
             <h2>關於我們</h2>
@@ -97,7 +127,7 @@
         <ul class="feature-list">
             <li><a href="http://127.0.0.1:5500/question.html" class="feature-button">智慧館員問答</a></li>
             <li><a href="http://127.0.0.1:5500/knowledge_graph.html" class="feature-button">知識圖譜</a></li>
-            <li><a href="http://127.0.0.1:5500/file.html" class="feature-button">文件瀏覽</a></li>
+            <li><a href="http://127.0.0.1:5500/file.html" class="feature-button">檔案總覽</a></li>
         </ul>
         </div>
     
@@ -116,7 +146,7 @@
             </div>
             <div class="item">
                 <a href="https://blog.pulipuli.info/" target="_blank">
-                    <img src="dr.chenyt.png" alt="">
+                    <img src="pudding.jpg" alt="">
                     <h4>陳勇汀博士</h4>
                 </a>
             </div>
