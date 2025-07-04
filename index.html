@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧輔助館員</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        .about, .features, .team {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .feature-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 8px 0;
+            background-color: #BEBEBE;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .feature-button:hover {
+            background-color: #BEBEBE;
+        }
+        .owl-carousel .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .owl-carousel .item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            aspect-ratio: 1 / 1; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            margin-bottom: 12px;
+            display: block;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+</head>
+
+
+<body>
+    <header>
+        <h1>智慧輔助館員</h1>
+        <p>「智慧館員輔助系統」以館員實務需求為核心，融合 AI 技術與資料管理設計，協助各部門更有效率地進行知識獲取與決策支援，打造智慧圖書館的工作新模式。</p>
+    </header>
+    <div class="container">
+        <div class="about">
+            <h2>關於我們</h2>
+            <p>「智慧館員輔助系統」是一套結合生成式 AI 聊天技術、文件檢索與知識圖譜視覺化的整合平台，專為圖書館館員設計，旨在提升資訊查找效率與日常業務處理的便利性。</p>
+            <p>透過本系統，館員可以：</p>
+            <p>◆ 與智慧聊天機器人對話，以自然語言詢問政策規定、作業流程或其他常見業務問題。</p>
+            <p>◆ 查閱內部文件與知識資料庫，快速找到所需檔案與內容依據。</p>
+            <p>◆ 透過知識圖譜視覺化掌握知識結構與各項作業關聯，強化理解與記憶。</p>
+            <p>◆ 直接瀏覽與檢索檔案清單，支援多條件篩選與文件摘要預覽。</p>  
+        </div>
+
+        
+    <div class="features">
+        <h2>核心功能</h2>
+        <ul class="feature-list">
+            <li><a href="http://127.0.0.1:5500/question.html" class="feature-button">智慧館員問答</a></li>
+            <li><a href="http://127.0.0.1:5500/knowledge_graph.html" class="feature-button">知識圖譜</a></li>
+            <li><a href="http://127.0.0.1:5500/file.html" class="feature-button">文件瀏覽</a></li>
+        </ul>
+        </div>
+    
+        <div class="team">
+            <h2>開發團隊</h2>
+            <p>本系統由國立政治大學華人文化元宇宙研究中心負責規劃與研發，致力於運用人工智慧技術推動圖書資訊服務創新，強化圖書館智慧化發展。</p>
+            <h4>團隊成員</h4>
+
+
+            <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="https://www.ccmtw.nccu.edu.tw/member/metaverse_ecosystem/%e9%99%b3%e5%bf%97%e9%8a%98/" target="_blank">
+                    <img src="prof.chencm.png" alt="">
+                    <h4>陳志銘教授</h4>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://blog.pulipuli.info/" target="_blank">
+                    <img src="dr.chenyt.png" alt="">
+                    <h4>陳勇汀博士</h4>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://www.ccmtw.nccu.edu.tw/member/#M4" target="_blank">
+                    <img src="dr.chenyt.png" alt="">
+                    <h4>林芯瑜</h4>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://www.ccmtw.nccu.edu.tw/member/#M4" target="_blank">
+                <img src="dr.chenyt.png" alt="">
+                <h4>曾永慈</h4>
+                </a>
+            </div>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    items: 3,           
+                    loop: true,         
+                    margin: 20,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    dots: true,        
+                    nav: false         
+                    });
+                });
+        </script>
+</body>
+</html>
